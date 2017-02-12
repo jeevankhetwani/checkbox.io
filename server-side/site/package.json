@@ -7,6 +7,13 @@
     "archiver": "~0.4.6",
     "cors": "^2.7.1",
     "express": "3.x",
-    "marked": "2.9"
+    "marked": "0.3.6",
+    "emailjs": "*",
+    "underscore": "*",
+    "mongodb": "*",
+    "jade": "*",
+    "json5": "*",
+    "validator": "*",
+    "bson": "*"
   }
 }

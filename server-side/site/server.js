@@ -12,6 +12,7 @@ var express = require('express'),
 var app = express();
 
 app.configure(function () {
+    app.use(express.static("../../public_html/"));
     app.use(express.logger('dev'));     /* 'default', 'short', 'tiny', 'dev' */
     app.use(express.bodyParser());
 });
@@ -83,7 +84,6 @@ app.post('/api/study/admin/notify/', admin.notifyParticipant);
 //app.post('/api/design/survey/vote/cast', votes.castVote );
 //app.get('/api/design/survey/vote/status', votes.status );
 //app.get('/api/design/survey/vote/stat/:id', votes.getSurveyStats );
-
 
 
 app.listen(3002);
